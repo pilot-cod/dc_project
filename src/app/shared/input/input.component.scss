@@ -1,0 +1,13 @@
+/* Styles for the InputComponent */
+.container {
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+label {
+  margin-right: 10px; /* Khoảng cách giữa label và input */
+}
+
+input {
+  margin: 0; /* Đảm bảo không có margin thêm ở đây */
+}
