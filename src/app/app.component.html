@@ -1,61 +1,85 @@
-<!-- Example of a new homepage layout -->
 <header>
-  <nav>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container">
-      <h1><a href="#">MyWebsite</a></h1>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center text-md-left">
+          <h1><a href="#">DC CORPORATION</a></h1>
+        </div>
+        <div class="col-md-4 text-center text-md-right">
+          <button class="btn btn-primary">Đăng nhập</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="nav justify-content-center mt-3">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </nav>
 </header>
 
 <section id="home" class="hero">
-  <div class="hero-content">
-    <h2>Welcome to My Website</h2>
-    <p>Your go-to place for amazing content and services.</p>
-    <a href="#services" class="btn-primary">Explore Now</a>
+  <div class="container">
+    <div class="hero-content">
+      <h2>Welcome to My Website</h2>
+      <p>Your go-to place for amazing content and services.</p>
+      <a href="#services" class="btn btn-primary">Explore Now</a>
+    </div>
   </div>
 </section>
 
 <section id="services" class="services">
   <div class="container">
-    <h2>Our Services</h2>
-    <div class="service">
-      <h3>Service 1</h3>
-      <p>Description of service 1.</p>
-      <app-input [label]="'Username'" placeholder="Enter your username"></app-input>
-    </div>
-    <div class="service">
-      <h3>Service 2</h3>
-      <p>Description of service 2.</p>
-    </div>
-    <div class="service">
-      <h3>Service 3</h3>
-      <p>Description of service 3.</p>
+    <h2 class="text-center">Our Services</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="service">
+          <h3>Service 1</h3>
+          <p>Description of service 1.</p>
+          <app-input [label]="'Username'" placeholder="Enter your username"></app-input>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service">
+          <h3>Service 2</h3>
+          <p>Description of service 2.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service">
+          <h3>Service 3</h3>
+          <p>Description of service 3.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="about" class="about">
   <div class="container">
-    <h2>About Us</h2>
-    <p>Information about your company or website.</p>
+    <h2 class="text-center">About Us</h2>
+    <p class="text-center">Information about your company or website.</p>
   </div>
 </section>
 
 <section id="contact" class="contact">
   <div class="container">
-    <h2>Contact Us</h2>
-    <p>Details on how to contact you.</p>
+    <h2 class="text-center">Contact Us</h2>
+    <p class="text-center">Details on how to contact you.</p>
   </div>
 </section>
 
 <footer>
   <div class="container">
-    <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+    <div class="row">
+      <div class="col-12 text-center">
+        <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+      </div>
+    </div>
   </div>
 </footer>
